@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="modinatheme">
+    <meta name="author" content="keendevs">
     <!-- ======== Page title ============ -->
     <title>JJ Construction</title>
     <!-- ========== Favicon Icon ========== -->
@@ -20,21 +20,129 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!--  owl carosuel css plugins -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <!-- metis menu css file -->
+    <!-- mean menu css file -->
     <link rel="stylesheet" href="assets/css/metismenu.css">
     <!--  owl theme css plugins -->
     <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <!--  owl theme css plugins -->
+    <link rel="stylesheet" href="assets/css/timeline.min.css">
     <!--  Bootstrap css plugins -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--  main style css file -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- template main style css file -->
     <link rel="stylesheet" href="style.css">
+   <style>
+    .cause-content h4{
+        cursor: pointer;
+    }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  overflow-y: auto;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+  animation: slideUp 0.4s ease-in-out;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.modal-content img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.modal-content table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.modal-content table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  word-break: break-word;
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .modal-content h3 {
+    font-size: 18px;
+  }
+
+  .modal-content table td {
+    font-size: 13px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 12px;
+  }
+
+  .modal-content img {
+    max-height: 180px;
+  }
+
+  .modal-content h3 {
+    font-size: 16px;
+  }
+
+  .close {
+    font-size: 20px;
+  }
+}
+</style>
 
 </head>
 
-<body class="body-wrapper">    
-    <!-- preloader -->
+<body>
+
     <!-- preloader -->
     <!-- <div id="preloader" class="preloader">
         <div class="animation-preloader">
@@ -83,7 +191,9 @@
         </div>
     </div> -->
 
-     <header class="header-wrap header-2">        
+    
+
+    <header class="header-wrap header-2">        
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between">
@@ -161,8 +271,8 @@
             </div>
         </div>
     </header>
-    
-    <section class="page-banner-wrap bg-cover" style="background-image: url('assets/img/home-slide/home-banner5.jpg')">
+
+     <section class="page-banner-wrap bg-cover" style="background-image: url('assets/img/home-slide/innerpage-banner.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
@@ -170,144 +280,246 @@
                         <nav>
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">contact</li>
+                              <li class="breadcrumb-item active" aria-current="page">Projects</li>
                             </ol>
                         </nav>
                     </div>
 
                     <div class="page-heading text-white">
-                        <h1>Contact Us</h1>
+                        <h1>Projects</h1>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact-page-wrap section-padding">
+    <section class="portfolio-wrapper-section section-padding" >
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-contact-card card1">
-                        <div class="top-part">
-                            <div class="icon">
-                                <i class="fal fa-envelope"></i>
-                            </div>
-                            <div class="title">
-                                <h4>Email Address</h4>
-                                <span>Sent mail asap anytime</span>
-                            </div>
-                        </div>
-                        <div class="bottom-part">                            
-                            <div class="info">
-                                <p>info@example.com</p>
-                                <p>jobs@example.com</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-contact-card card2">
-                        <div class="top-part">
-                            <div class="icon">
-                                <i class="fal fa-phone"></i>
-                            </div>
-                            <div class="title">
-                                <h4>Phone Number</h4>
-                                <span>call us asap anytime</span>
-                            </div>
-                        </div>
-                        <div class="bottom-part">                            
-                            <div class="info">
-                                <p>098-098-098-09</p>
-                                <p>098-098-098-09</p>
-                            </div>
-                          
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-contact-card card3">
-                        <div class="top-part">
-                            <div class="icon">
-                                <i class="fal fa-map-marker-alt"></i>
-                            </div>
-                            <div class="title">
-                                <h4>Office Address</h4>
-                                <span>Sent mail asap anytime</span>
-                            </div>
-                        </div>
-                        <div class="bottom-part">                            
-                            <div class="info">
-                                <p>B2, Miranda City Tower</p>
-                                <p>New York, US</p>
-                            </div>
-                            
-                        </div>
+                <div class="col-12 col-lg-12 text-center">
+                    <div class="section-title-2">
+                        <h2>Our Work</h2>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <div class="contact-map-wrap">
-                        <div id="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5457.875323165521!2d144.90402300269133!3d-37.792722838344716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sbd!4v1612018663424!5m2!1sen!2sbd" frameborder="0" style="border:0; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
+            <div class="row mb-20">
+                <div class="col-12 col-lg-12 text-center">
+                    <div class="portfolio-cat-filter">
+                        <button data-filter="*" class="active">View All</button>
+                        <button data-filter=".bedroom">Ongoing</button>
+                        <button data-filter=".floor">Completed</button>
                     </div>
                 </div>
             </div>
 
-            <div class="row section-padding pb-0" >
-                <div class="col-12 text-center mb-20">
-                    
-                    <h1>Get In Touch</h1>
-                </div>
-
-                <div class="col-12 col-lg-8"style="margin: auto;">
-                    <div class="contact-form">                                                        
-                        <form action="mail.php" class="row" id="contact-form">
-                            <div class="col-md-6 col-12">
-                                <div class="single-personal-info">
-                                    <label for="fname">Full Name</label>
-                                    <input type="text" id="fname" placeholder="Enter Name" >                                         
+            <div class="row grid">
+                <div class="col-xl-4 col-md-6 grid-item bedroom">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Baner',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/road-construction-at-baner-pune.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/road-construction-at-baner-pune.jpg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                    xyz
                                 </div>
-                            </div>                            
-                            <div class="col-md-6 col-12">
-                                <div class="single-personal-info">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" placeholder="Enter Email Address" >                                         
+                              
+                            </div>
+                            <h4>Road Construction @ Baner</h4>
+                        </div>
+                    </div>                     
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item floor home">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Alandi',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/RoadConstruction-Alandi.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/RoadConstruction-Alandi.jpg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
-                                <div class="single-personal-info">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="text" id="phone" placeholder="Enter Number">                                         
+                            <h4>Road Construction @Alandi</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item office">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Pune',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/road-construction-at-sangamwadi-pune.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/road-construction-at-sangamwadi-pune.jpg');">
+                           
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                    xyz
                                 </div>
-                            </div>                                      
-                            <div class="col-md-6 col-12">
-                                <div class="single-personal-info">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" placeholder="Enter Subject">                                         
+                               
+                            </div>
+                            <h4>Road Construction @Pune</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item bedroom home">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Kharadi',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/road-construction-at-kharadi-pune.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/road-construction-at-kharadi-pune.jpg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                    xyz
                                 </div>
-                            </div>                                      
-                            <div class="col-md-12 col-12">
-                                <div class="single-personal-info">
-                                    <label for="message">Enter Message</label>
-                                    <textarea id="message" placeholder="Enter message"></textarea>                                        
+                               
+                            </div>
+                            <h4>Road Construction @Kharadi</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item bedroom">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Akola',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/AkolaProject.jpeg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/AkolaProject.jpeg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
                                 </div>
-                            </div>                                      
-                            <div class="col-md-12 col-12 text-center">
-                                <input class="submit-btn" type="submit" value="Get A Quote">
-                            </div>                                      
-                        </form>
-                    </div>
+                               
+                            </div>
+                            <h4>SH 278 @ Buldhana, Akola</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item floor home">
+                    <div class="single-cause-item" onclick="openModal(
+                        'SH 179 @ Gargoti, Kolhapur',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/KolhapurProject.jpeg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/KolhapurProject.jpeg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
+                                </div>
+                               
+                            </div>
+                            <h4>SH 179 @ Gargoti, Kolhapur</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item bedroom home">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Grade Separator @ Bijali Nagar',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/balaji-nagar-underpass.jpeg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/balaji-nagar-underpass.jpeg');">
+                           
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
+                                </div>
+                              
+                            </div>
+                            <h4>Grade Separator @ Bijali Nagar</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item office">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Grade Separator @ Shivajinagar',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/Grade-Seperator-at-shivajinagar-pune.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/Grade-Seperator-at-shivajinagar-pune.jpg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
+                                </div>
+                               
+                            </div>
+                            <h4>Grade Separator @ Shivajinagar</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
                 </div>
             </div>
         </div>
     </section>
 
-      <footer class="footer-2 footer-wrap">
+  <!-- Project Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle">Project Title</h3>
+    <table>
+      <tr><td><strong>Status</strong></td><td id="modalStatus"></td></tr>
+      <tr><td><strong>Cost</strong></td><td id="modalCost"></td></tr>
+      <tr><td><strong>Duration</strong></td><td id="modalDuration"></td></tr>
+      <tr><td><strong>Client</strong></td><td id="modalClient"></td></tr>
+    </table>
+    <img id="modalImage" src="" alt="Project Image" />
+  </div>
+</div>
+
+
+  
+
+   <footer class="footer-2 footer-wrap">
         <div class="footer-widgets">            
             <div class="container">
                 <div class="row">
@@ -402,7 +614,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12 col-12 text-center text-lg-left">
                         <div class="copyright-info text-center">
-                            <p>&copy; Copyright & Design By <a href="">Arise Communications.</a> - 2025</p>                            
+                            <p>&copy; Copyright & Design By <a href="https://arisecommunications.co/">Arise Communications.</a> - 2025</p>                            
                         </div>
                     </div>
                    
@@ -410,6 +622,30 @@
             </div>
         </div>
     </footer>
+
+    <!-- js -->
+     <script>
+  function openModal(title, status, cost, duration, client, imageUrl) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalStatus').innerText = status;
+    document.getElementById('modalCost').innerText = cost;
+    document.getElementById('modalDuration').innerText = duration;
+    document.getElementById('modalClient').innerText = client;
+    document.getElementById('modalImage').src = imageUrl;
+    document.getElementById('projectModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('projectModal').style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById('projectModal');
+    if (event.target === modal) {
+      closeModal();
+    }
+  }
+</script>
 
     <!--  ALl JS Plugins
     ====================================== -->
