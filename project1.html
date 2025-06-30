@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="keendevs">
+    <!-- ======== Page title ============ -->
+    <title>JJ Construction</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/jj-logo3.png">
+    <!-- ===========  All Stylesheet ================= -->
+    <!--  Icon css plugins -->
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <!--  animate css plugins -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--  owl carosuel css plugins -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- mean menu css file -->
+    <link rel="stylesheet" href="assets/css/metismenu.css">
+    <!--  owl theme css plugins -->
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <!--  owl theme css plugins -->
+    <link rel="stylesheet" href="assets/css/timeline.min.css">
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--  main style css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- template main style css file -->
+    <link rel="stylesheet" href="style.css">
+   <style>
+    .cause-content h4{
+        cursor: pointer;
+    }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  overflow-y: auto;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+  animation: slideUp 0.4s ease-in-out;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.modal-content img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.modal-content table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.modal-content table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  word-break: break-word;
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .modal-content h3 {
+    font-size: 18px;
+  }
+
+  .modal-content table td {
+    font-size: 13px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 12px;
+  }
+
+  .modal-content img {
+    max-height: 180px;
+  }
+
+  .modal-content h3 {
+    font-size: 16px;
+  }
+
+  .close {
+    font-size: 20px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <!-- <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">                
+            </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="U" class="letters-loading">
+                        U
+                    </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                       S
+                    </span>
+                    <span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+                    <span data-text-preloader="R" class="letters-loading">
+                        R
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="X" class="letters-loading">
+                        X
+                    </span>
+                </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    
+
+    <header class="header-wrap header-2">        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/img/jj-logo3.png" alt="logo" height="60px"></a>
+                    </div>     
+                     <!-- 3193 css -->       
+                    <div class="menu-wrapper">
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a>
+                                </li>
+                                <li><a href="">Company</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="Profile.html">Profile</a></li>
+                                        <li><a href="leadership.html">Leadership</a></li>
+                                        <li><a href="partners.html">Partners</a></li>
+                                        <li><a href="careers.html">Careers</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="project1.html">Projects</a>
+                                    
+                                </li>
+                                <li><a href="machinery.html">Machinery</a></li>
+                                <li><a href="client.html">Clientle</a></li>
+                                  <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-right hide-on-tab">
+                        <a href="contact.html" class="theme-btn theme-2">Enquire Now</a>
+                    </div>
+
+                    <div class="mobile-menu-wrap align-items-center justify-content-center">
+                        <div class="mobile-nav-wrap">                    
+                            <div id="hamburger">
+                                <i class="fal fa-bars"></i>
+                            </div>
+                            <!-- mobile menu - responsive menu  -->
+                            <div class="mobile-nav">
+                                <button type="button" class="close-nav">
+                                    <i class="fal fa-times-circle"></i>
+                                </button>
+                                <nav class="sidebar-nav">
+                                    <ul class="metismenu" id="mobile-menu">
+                                        <li><a class="has-arrow" href="index.html">Home</a>
+                                        </li>
+                                         <li><a href="">Company</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="Profile.html">Profile</a></li>
+                                        <li><a href="leadership.html">Leadership</a></li>
+                                        <li><a href="partners.html">Partners</a></li>
+                                        <li><a href="careers.html">Careers</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="project1.html">Projects</a>
+                                    
+                                </li>
+                                <li><a href="machinery.html">Machinery</a></li>
+                                <li><a href="client.html">Clientle</a></li>
+                                  <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+    
+                                <div class="action-bar text-white">
+                                    <a href="contact.html" class="theme-btn mt-4">Enquire Now <i class="fal fa-arrow-right"></i></a>
+                                </div>
+                            </div>                           
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <section class="page-banner-wrap bg-cover" style="background-image: url('assets/img/home-slide/innerpage-banner.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                    <div class="breadcrumb-wrap">
+                        <nav>
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="page-heading text-white">
+                        <h1>Projects</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-wrapper-section section-padding" >
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 text-center">
+                    <div class="section-title-2">
+                        <h2>Our Work</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-20">
+                <div class="col-12 col-lg-12 text-center">
+                    <div class="portfolio-cat-filter">
+                        <button data-filter="*" class="active">View All</button>
+                        <button data-filter=".bedroom">Ongoing</button>
+                        <button data-filter=".floor">Completed</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row grid">
+                <div class="col-xl-4 col-md-6 grid-item bedroom">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Baner',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/road-construction-at-baner-pune.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/road-construction-at-baner-pune.jpg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                    xyz
+                                </div>
+                              
+                            </div>
+                            <h4>Road Construction @ Baner</h4>
+                        </div>
+                    </div>                     
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item floor home">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Alandi',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/RoadConstruction-Alandi.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/RoadConstruction-Alandi.jpg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
+                                </div>
+                            </div>
+                            <h4>Road Construction @Alandi</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item office">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Pune',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/road-construction-at-sangamwadi-pune.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/road-construction-at-sangamwadi-pune.jpg');">
+                           
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                    xyz
+                                </div>
+                               
+                            </div>
+                            <h4>Road Construction @Pune</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item bedroom home">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Kharadi',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/road-construction-at-kharadi-pune.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/road-construction-at-kharadi-pune.jpg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                    xyz
+                                </div>
+                               
+                            </div>
+                            <h4>Road Construction @Kharadi</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item bedroom">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Road Construction @ Akola',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/AkolaProject.jpeg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/AkolaProject.jpeg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
+                                </div>
+                               
+                            </div>
+                            <h4>SH 278 @ Buldhana, Akola</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item floor home">
+                    <div class="single-cause-item" onclick="openModal(
+                        'SH 179 @ Gargoti, Kolhapur',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/KolhapurProject.jpeg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/KolhapurProject.jpeg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
+                                </div>
+                               
+                            </div>
+                            <h4>SH 179 @ Gargoti, Kolhapur</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item bedroom home">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Grade Separator @ Bijali Nagar',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/balaji-nagar-underpass.jpeg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/balaji-nagar-underpass.jpeg');">
+                           
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
+                                </div>
+                              
+                            </div>
+                            <h4>Grade Separator @ Bijali Nagar</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+                <div class="col-xl-4 col-md-6 grid-item office">
+                    <div class="single-cause-item" onclick="openModal(
+                        'Grade Separator @ Shivajinagar',
+                        '',
+                        '',
+                        '',
+                        '',
+                        'assets/img/Grade-Seperator-at-shivajinagar-pune.jpg'
+                      )">
+                        <div class="cause-bg bg-cover" style="background-image: url('assets/img/Grade-Seperator-at-shivajinagar-pune.jpg');">
+                            
+                        </div>
+                        <div class="cause-content">
+                            <div class="cause-meta d-flex">
+                                <div class="author mr-15">
+                                   xyz
+                                </div>
+                               
+                            </div>
+                            <h4>Grade Separator @ Shivajinagar</h4>
+                        </div>
+                    </div> <!-- /.single-cause-item  -->                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Project Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle">Project Title</h3>
+    <table>
+      <tr><td><strong>Status</strong></td><td id="modalStatus"></td></tr>
+      <tr><td><strong>Cost</strong></td><td id="modalCost"></td></tr>
+      <tr><td><strong>Duration</strong></td><td id="modalDuration"></td></tr>
+      <tr><td><strong>Client</strong></td><td id="modalClient"></td></tr>
+    </table>
+    <img id="modalImage" src="" alt="Project Image" />
+  </div>
+</div>
+
+
+  
+
+   <footer class="footer-2 footer-wrap">
+        <div class="footer-widgets">            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xl-4 col-12">
+                        <div class="single-footer-wid site_info_box">
+                            <a href="index.html" class="f_logo">
+                                <img src="assets/img/jj-logo3.png" height="100px" alt="logo">
+                            </a>
+                           
+                            <div class="social_link">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- /.col-lg-3 - single-footer-wid -->
+                    <div class="col-md-6 col-xl-2 col-12">
+                        <div class="single-footer-wid">
+                            <div class="wid-title">
+                                <h4>Pages</h4>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Profile.html">Profile</a></li>
+                                <li><a href="project1.html">Projects</a></li>
+                                <li><a href="client.html">Clientle</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div> <!-- /.col-lg-3 - single-footer-wid -->
+                    <!-- /.col-lg-3 - single-footer-wid -->
+                    <div class="col-md-6 col-xl-3 col-12 pl-xl-4">                        
+                        <div class="single-footer-wid site_info_widget">
+                            <div class="wid-title">
+                                <h4>Get In Touch</h4>
+                            </div>
+                            <div class="contact-us">
+                                <div class="single-contact-info">
+                                    <div class="icon">
+                                        <i class="fal fa-phone"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <span>Phone Number</span>
+                                        <p>+908 9098 987 98</p>
+                                    </div>
+                                </div>
+                                <div class="single-contact-info">
+                                    <div class="icon">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <span>Email Address</span>
+                                        <p>info@supportexam.com</p>
+                                    </div>
+                                </div>
+                                <div class="single-contact-info">
+                                    <div class="icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <span>Office Address</span>
+                                        <p>14/A, Ping Tower, NYC</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-md-6 col-xl-3 col-12 pr-xl-3">                        
+                        <div class="single-footer-wid newsletter_widget pr-3">
+                            <div class="wid-title">
+                                <h4>Newsletter</h4>
+                            </div>
+                            <div class="newsletter_box">
+                                <p>Subscribe our newsletter to get our latest updates.</p>
+                                <form action="#">
+                                    <input type="email" placeholder="Enter email address" required>
+                                    <button class="submit-btn" type="submit"><i class="fas fa-paper-plane"></i></button>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div> <!-- /.col-lg-3 - single-footer-wid -->
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-12 text-center text-lg-left">
+                        <div class="copyright-info text-center">
+                            <p>&copy; Copyright & Design By <a href="https://arisecommunications.co/">Arise Communications.</a> - 2025</p>                            
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+     <script>
+  function openModal(title, status, cost, duration, client, imageUrl) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalStatus').innerText = status;
+    document.getElementById('modalCost').innerText = cost;
+    document.getElementById('modalDuration').innerText = duration;
+    document.getElementById('modalClient').innerText = client;
+    document.getElementById('modalImage').src = imageUrl;
+    document.getElementById('projectModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('projectModal').style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById('projectModal');
+    if (event.target === modal) {
+      closeModal();
+    }
+  }
+</script>
+
+    <!--  ALl JS Plugins
+    ====================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imageload.min.js"></script>
+    <script src="assets/js/scrollUp.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/metismenu.js"></script>
+    <script src="assets/js/timeline.min.js"></script>
+    <script src="assets/js/ajax-mail.js"></script>
+    <script src="assets/js/active.js"></script>
+</body>
+
+</html>
