@@ -136,11 +136,10 @@ form {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  font-size: 44px;
-  color: #00235a;
-  font-weight: 600;
-  line-height: 130%;
-  font-family: 'Roboto', sans-serif;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
@@ -231,10 +230,9 @@ h6 {
 }
 
 h1 {
-  font-size: 44px;
-  line-height: 130%;
+  font-size: 60px;
+  line-height: 70px;
   letter-spacing: -3px;
-  margin-bottom: 15px;
 }
 
 @media (max-width: 991px) {
@@ -5132,7 +5130,7 @@ header.header-4 #hamburger {
 }
 
 .section-padding {
-  padding: 0px 0px;
+  padding: 120px 0px;
 }
 
 @media (max-width: 991px) {
@@ -12199,165 +12197,3 @@ header.header-4 #hamburger {
 .para{
   text-align: justify;
 }
-
-
-
-/* General styles */
-.contact-form {
-  background-color: #f9f9f9;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.single-personal-info label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.single-personal-info input,
-.single-personal-info textarea {
-  width: 100%;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-
-.single-personal-info input:focus,
-.single-personal-info textarea:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-.submit-btn {
-  background-color: #007bff;
-  border: none;
-  padding: 12px 30px;
-  color: #fff;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Responsive spacing */
-@media screen and (max-width: 768px) {
-  .contact-form {
-    padding: 20px;
-  }
-
-  .submit-btn {
-    width: 100%;
-  }
-}
-
-
-
-/* h2{
-  font-size: 44px;
-  font-family: 'roboto' sans-serif;
-  line-height: 130%;
-  font-weight: 600;
-  color: #00235a;
-
-} */
-/* Background gradient button */
-.btn-gradient {
-  background: linear-gradient(135deg, #007bff, #6610f2);
-  color: #fff;
-  border: none;
-  padding: 12px 30px;
-  font-size: 1.1rem;
-  border-radius: 8px;
-  transition: background 0.4s ease;
-}
-
-.btn-gradient:hover {
-  background: linear-gradient(135deg, #0056b3, #4a00e0);
-}
-
-/* Input and textarea effects */
-.contact-form .form-control {
-  border-radius: 8px;
-  padding: 12px 15px;
-  font-size: 1rem;
-  transition: box-shadow 0.3s ease;
-  border: 1px solid #ccc;
-}
-
-.contact-form .form-control:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
-}
-
-/* Input group icon styling */
-.input-group-text {
-  background-color: #f0f0f0;
-  border-radius: 8px 0 0 8px;
-  border: 1px solid #ccc;
-}
-
-.contact-form .form-label {
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 767px) {
-  .btn-gradient {
-    width: 100%;
-  }
-}
-
-/* Contact Form Responsive Padding */
-
-/* iPad Mini (768x1024) and iPad 9.7" Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 834px) and (orientation: portrait) {
-  .contact-form {
-    padding: 30px !important;
-  }
-}
-
-/* iPad Air and iPad Pro Portrait */
-@media only screen and (min-device-width: 834px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .contact-form {
-    padding: 40px !important;
-  }
-}
-
-/* iPad Air and Pro Landscape */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
-  .contact-form {
-    padding: 50px !important;
-  }
-}
-
-/* Samsung Galaxy S8+ (360x740) and similar */
-@media only screen and (max-width: 400px) {
-  .contact-form {
-    padding: 20px !important;
-  }
-}
-
-/* Samsung Galaxy S20 Ultra (412x915) */
-@media only screen and (min-width: 401px) and (max-width: 450px) {
-  .contact-form {
-    padding: 24px !important;
-  }
-}
-
-/* iPhone 12 Pro Max (428x926) */
-@media only screen and (min-width: 420px) and (max-width: 440px) {
-  .contact-form {
-    padding: 24px !important;
-  }
-}
-
-
